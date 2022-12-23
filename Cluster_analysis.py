@@ -65,7 +65,7 @@ def set_layout(fig):
         plot_bgcolor='rgba(0,0,0,0)',
         coloraxis_showscale=False,
         showlegend=False,
-        height=1000, width=1400, 
+        height=1000, width=2000, 
         scene_camera_eye=dict(x=0.7, y=0.7, z=0.7), 
     )
     fig = fig.update_traces(hovertemplate=HOVER_TEMPLATE)
