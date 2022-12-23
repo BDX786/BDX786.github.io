@@ -82,18 +82,22 @@ layout: default
     position: sticky;
     align-self: flex-end;
     padding: 5px;
-    margin-top: 7px;
+    top: 10px;
+    left: 0px;
+    right: 0px;
     /* margin: 0 0 10 10 */
   }
 
   .right_container_barchart{
     width: 60%;
     /* float: right; */
-    position: sticky;    
+    position: sticky;   
     /* top: 50; */
     align-self: flex-start;
     padding: 5px;
-    margin-top: 0px;
+    top: 10px;
+    left: 0px;
+    right: 0px;
     /* margin: 0 0 10 10 */
   }
 
@@ -101,12 +105,40 @@ layout: default
     width: 60%;
     /* float: right; */
     position: sticky;
-    top: 50; 
+    /* top: 50; */
+    top: 10px;
+    left: 0px;
+    right: 0px;
     align-self: flex-start;
     /* margin-left: 20px; */
     padding: 5px;
     margin-top: 0px;
     /* margin: 0 0 10 10 */
+  }
+
+    .graph_container
+  {
+    width: 100%;
+    height: 100%;
+    top: 10px;
+    left: 0px;
+    right: 0px;
+    position: sticky;
+    align-self: flex-start;
+    padding: 5px;
+    margin: 0 0 10 10
+    /*margin: 0 0 10 10;*/
+  }
+
+    .text_container_graph
+  {
+    font-size: 16px;
+    text-align: justify;
+    float: left;
+    width: 30%;
+    color: rgb(0, 0, 0);
+    margin-left: 70px;
+    background-color: rgba(255, 255, 255, 0.8)
   }
 
 
@@ -121,20 +153,6 @@ layout: default
     align-self: flex-start;
     padding: 5px;
     /* margin: 0 0 10 10 */
-  }
-
-  .graph_container
-  {
-    width: 100%;
-    height: 100%;
-    top: 10px;
-    left: 0px;
-    right: 0px;
-    position: sticky;
-    align-self: flex-start;
-    padding: 5px;
-    margin: 0 0 10 10
-    /*margin: 0 0 10 10;*/
   }
 
   .graph_genres
@@ -161,16 +179,7 @@ layout: default
     margin-left: 70px;
   }
 
-  .text_container_graph
-  {
-    font-size: 16px;
-    text-align: justify;
-    float: left;
-    width: 30%;
-    color: rgb(0, 0, 0);
-    margin-left: 70px;
-    background-color: rgba(255, 255, 255, 0.8)
-  }
+
 
   iframe {
     width: 100%;
@@ -350,11 +359,22 @@ layout: default
               period. If the bars increase across time for a cluster, this indicates that the cluster has become more prevalent in
               movies during the last century. Additionally, the color of a bar chart indicates the percentage of revenue created by
               the movies to which these characters belong.&nbsp;</p>
+            <p>We now move onto studying character archetypes. Humans are complex and diverse, and no two people are the same. Yet
+              we tend to find the same character types again and again in movies. Who does not know the heroic protagonist in action
+              movies, the funny sidekick in action comedy. <a href="https://tvtropes.org/pmwiki/pmwiki.php/Main/Characters">TV
+                Tropes</a> is a rich database that, among others, describes a multitude of character archetypes. The CMU movie
+              summary corpus has classified 500 characters based on the TV Tropes clusters, which provides a first insight into the
+              diversity of the dataset.&nbsp;</p>
+            <p>What are the top 5 clusters for romance movies you think? How about action movies?</p>
+            <p>These tropes give a first glance at the different types of characters, but use only a small share of our data. To
+              obtain a more comprehensive view on all character archetypes, we should consider the whole dataset. Therefore, by
+              using a coreNLP pipeline in combination with DBScan clustering, we clustered all characters. So grab some popcorn, as
+              we dive into the clusters.</p>
           </div>
-
           <div class="right_container_barchart">
-              <!-- Add the iframe element where you want the plot to appear -->
-              <iframe src="Plots/cluster.html" data-aos="zoom-in " data-aos-offset="0" data-aos-duration="0" data-aos-mirror="true" height = "600" data-aos-anchor-placement="top-bottom"></iframe>
+            <!-- Add the iframe element where you want the plot to appear -->
+            <iframe src="Plots/cluster.html" data-aos="zoom-in " data-aos-offset="0" data-aos-duration="0" data-aos-mirror="true"
+              height="600" data-aos-anchor-placement="top-bottom"></iframe>
           </div>
         </div>
 
