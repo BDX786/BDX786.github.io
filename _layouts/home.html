@@ -323,7 +323,7 @@ layout: default
             <p>Our research aims to gain a better understanding of characters in movies by clustering them based on their
               characteristics. Using these clusters, one can find patterns within and across movies. To illustrate, we can look at
               what clusters are most common for a movie genre.</p>
-            <p>What are the top 5 character types for action movies you think? How about fantasy movies?</p>
+            <p>What are the top 5 character types for romance movies you think? How about action movies?</p>
           </div>
           <div class = "right_container_boxes" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="0" data-aos-mirror="true" data-aos-anchor-placement="top-bottom">
             <div class = "flip_container">
@@ -372,22 +372,17 @@ layout: default
             data-aos-duration="50">
             <h2>Character clustering</h2>
             <p>Before we dive into the nitty-gritty details, take some time to explore the clusters! Can you find your favorite
-              movies? Your favorite characters?</p>
-            <p>All done playing? So how did we get these clusters. This process starts with processing all plot summaries, using the
-              coreNLP pipeline. INSERT TEXT MARGUERITE OR ANTOINE.&nbsp;</p>
-            <p>Once we obtained the descriptions for all characters, the hard work was done. We embedded the descriptions using <a
-                href="https://spacy.io/">spaCy</a>, and weighted them by category. The character titles and attributes gained more
-              weight, whereas the verbs were weighted less. We then first reduced the dimensionality of the embedding to 50
-              dimensions by applying principal component analysis. Next, the dimensionality is brought down to 3 by means of <a
-                href="https://towardsdatascience.com/what-why-and-how-of-t-sne-1f78d13e224d">t-SNE dimensionality reduction</a>.
-              Last, we applied DBSCAN clustering to obtain the clusters, which we labeled manually based on the descriptions of the
-              characters. Specifically, we looked at the ten characters that originated from movies with the highest box office
-              revenue in that cluster.</p>
-            <p>Let us already note two findings from these clusters. The first thing that strikes the eye is the big central
+              movies? Your favorite characters? Who is the big pink circle in young love female characters?</p>
+            <p>All done playing? So how did we get these clusters. This process starts with processing all plot summaries to get as
+              much information as possible about each character: name, age, profession, marital status, adjectives, passive verbs,
+              active verbs… Everything we could get to understand what are they like. We then embedded 
+              these descriptions into 3D space in order to visualize the character archetypes as a point cloud. </p>
+            <p>What do we learn from these clusters? The first thing that strikes the eye is the big central
               cluster, which consists of Heroes and anti-heroes. This is not so surprising, as a hero or anti-hero is usually the
-              main character of a movie. Naturally, many of the characters that were extracted from the plot summary are main
+              main character of a movie. Naturally, many of the characters that were extracted from the plot summaries are main
               characters. Second, most romance characters are in the central hero or anti-hero cluster. This indicates that from the
-              romance movies, we have mostly gathered the main characters.</p>
+              romance movies, we have mostly gathered the main characters. We also notice a great deal of lawyers in the romance movies.
+              Seems like a 39 years old male lawyer is a popular character in romance comedies. </p>
           </div>
         </div>
 
