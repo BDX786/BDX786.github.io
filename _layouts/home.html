@@ -104,8 +104,8 @@ layout: default
     top: 0px;
     left: 0px;
     right: 0px;
-    margin-top: 50px;
-    /* margin: 0 0 10 10 */
+    margin-top: 4px;
+    margin: 10 0 10 0;
   }
 
   .right_container_barchart{
@@ -147,7 +147,6 @@ layout: default
     align-self: flex-start;
     padding: 5px;
     margin: 0 0 10 10;
-    box-shadow: inset 0px 0px 50px #ffffff;
   }
 
       .graph_container_time
@@ -161,7 +160,6 @@ layout: default
     align-self: flex-start;
     padding: 5px;
     margin: 0 0 10 10;
-    box-shadow: inset 0px 0px 50px #ffffff;
   }
 
     .text_container_graph
@@ -187,6 +185,7 @@ layout: default
     align-self: flex-start;
     padding: 5px;
     /* margin: 0 0 10 10 */
+    
   }
 
   .graph_genres
@@ -267,11 +266,12 @@ layout: default
         <!-- Lorem Ipsum -->
         <div class="container" style="display: flex; flex-direction: column;" data-aos="zoom-in" data-aos-anchor-placement="top-center" data-aos-mirror="true">
           <h1>Welcome</h1>
-          <p>The universe is made of stories. Nowadays, the most impactful stories come in the form of movies. These stories are a
-            reflection of society and show our norms and values. So what do we learn from movies? In this datastory, we take you
-            on a journey through time and space to discover movies through the eyes of characters.&nbsp;</p>
+          <p>The universe is made of stories. Nowadays, the most impactful stories come in the form of movies. 
+            Our society is reflected in the characters and stories that we see on the big screen.
+            What can we learn from them? In this datastory, we take you on a journey through 
+            time and space to discover movies through the eyes of characters.&nbsp;</p>
           <h2>Data</h2>
-          <p>For this story, we will be using the <a href="http://www.cs.cmu.edu/~ark/personas/">CMU movie summary corpus.</a>
+          <p>This story uses data from the <a href="http://www.cs.cmu.edu/~ark/personas/">CMU movie summary corpus.</a>
             What does this dataset entail?</p>
           <center> <p><a class="ex2"><h4>450,669 characters </h4> </a></p></center>
           <center>
@@ -280,9 +280,9 @@ layout: default
               </a></p>
           </center>
           <center> <p><a class="ex2"><h4>42,306 plot summaries </h4> </a></p></center>
-          <p class="heading">Additionally, a there are 500 characters that are classified into one of 72 tv trope clusters.</p>
+          <p class="heading">The authors also classified 500 characters into one of 72 character archetypes.</p>
           <h2 class="heading">Genres</h2>
-          <p>Let us start our journey by looking at different movie genres. Can you guess how many different genres there are?</p>
+          <p>Let us start our journey by looking at movie genres. Can you guess how many there are?</p>
           
           <center>
           <div class="flip-box-text">
@@ -297,18 +297,18 @@ layout: default
           </div>
           </center>
 
-          <p>The figure below shows the prevalence of different genres across time. One can see that the movie industry has
-            changed significantly over time. Up until 1920, black-and-white, silent films and short films were dominant. The first
-            movie with both synchronized music and speech is <a href="https://en.wikipedia.org/wiki/The_Jazz_Singer">The Jazz
+          <p>The figure below shows the evolution of movie genres over time. One can see that the movie industry has
+            changed significantly over time. Up until 1920, black-and-white, silent and short films dominated the industry. 
+            The first movie with both synchronized music and speech is <a href="https://en.wikipedia.org/wiki/The_Jazz_Singer">The Jazz
               Singer</a>. This marked the end of the era of silent movies, as movies with sound ("talkies") soared in popularity
             from this point on. What pattern do you see for your favorite movie genre?&nbsp;</p>
             
-        </div>
+         </div>
 
         <div class="row">
           <div class="container">
             <!-- Add the iframe element where you want the plot to appear -->
-            <iframe src="Plots/genre_distrib.html" data-aos="zoom-in " data-aos-offset="0" data-aos-duration="0" data-aos-mirror="true" data-aos-anchor-placement="top-bottom" height="650"></iframe>
+            <iframe src="Plots/genre_distrib.html" data-aos="zoom-in " data-aos-offset="0" data-aos-duration="0" data-aos-mirror="true" data-aos-anchor-placement="top-bottom" height="600"></iframe>
           </div>
         </div>
         
@@ -317,11 +317,11 @@ layout: default
             <h2>Movie characters</h2>
             <p>We now move onto studying character archetypes. Humans are complex and diverse, and no two people are the same. Yet
               we tend to find the same character types again and again in movies. Who does not know the heroic protagonist in action
-              movies, or the funny sidekick in action comedy.&nbsp;</p>
+              movies, or the funny sidekick in action comedy?&nbsp;</p>
             <p>Our research aims to gain a better understanding of characters in movies by clustering them based on their
-              characteristics. Using these clusters, one can find patterns within and across movies. To illustrate, we can look at
+              characteristics. Using these clusters, one can find patterns within and across movies. To illustrate this, we can look at
               what clusters are most common for a movie genre.</p>
-            <p>What are the top 5 character types for romance movies you think? How about action movies?</p>
+            <p>What do you think are the top 5 character types for romance movies? How about action movies?</p>
           </div>
           <div class = "right_container_boxes" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="0" data-aos-mirror="true" data-aos-anchor-placement="top-bottom">
             <div class = "flip_container">
@@ -331,6 +331,7 @@ layout: default
                     <img src="img/titanic.jpg" alt="Paris" style="width:300px;height:200px">
                   </div>
                   <div class="flip-box-back">
+                    <br>
                     <h5>Top 5 Romance Tropes</h5>
                     <p>Crazy jealous guy<br>
                       Big man on campus<br>
@@ -346,6 +347,7 @@ layout: default
                     <img src="img/rocky.jpg" alt="rocky" style="width:300px;height:200px">
                   </div>
                   <div class="flip-box-back">
+                    <br>
                     <h5>Top 5 Action Tropes</h5>
                     <p>Corrupt corporate executive<br>  
                     Father to his men<br>       
@@ -399,7 +401,7 @@ layout: default
               more profitable over time. Arrogant leaders have also become more prevalent, but not more profitable. What other
               patterns can you discover?</p>
           </div>
-          <div class="right_container_barchart" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="0" data-aos-mirror="true" data-aos-anchor-placement="top-bottom">
+          <div class="right_container_barchart">
             <!-- Add the iframe element where you want the plot to appear -->
             <iframe src="Plots/cluster.html" data-aos="zoom-in " data-aos-offset="0" data-aos-duration="0" data-aos-mirror="true"
               height="600" data-aos-anchor-placement="top-bottom"></iframe>
@@ -407,7 +409,7 @@ layout: default
         </div>
         
         <div class="row">
-          <div class="text_container_graph" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="0" data-aos-mirror="true" data-aos-anchor-placement="top-bottom">
+          <div class="text_container_graph" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="1000" data-aos-mirror="true" data-aos-anchor-placement="top-bottom">
             <h2>Cluster wordclouds</h2>
             will give an overview. It should be very opaque. Boop biep boop. Sed non risus. Suspendisse lectus tortor, dignissim
             sit amet, adipiscing nec, ultricies sed, dolor. Cras elementum ultrices diam. Maecenas ligula massa, varius a,
@@ -430,7 +432,7 @@ layout: default
             tincidunt mi. Curabitur iaculis, lorem vel rhoncus faucibus, felis magna fermentum augue, et ultricies lacus lorem
             varius purus. Curabitur eu amet
           </div>
-          <div class= "right_container_wordcloud" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="0" data-aos-mirror="true" data-aos-anchor-placement="top-bottom">
+          <div class= "right_container_wordcloud" data-aos="zoom-in" data-aos-offset="0" data-aos-duration="1000" data-aos-mirror="true" data-aos-anchor-placement="top-bottom">
             <div class="slide_container">
               <img class="mySlides" src="img/wordcloud_label_0.jpg">
               <img class="mySlides" src="img/wordcloud_label_1.jpg">
