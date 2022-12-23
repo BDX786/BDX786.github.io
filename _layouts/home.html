@@ -70,12 +70,31 @@ layout: default
   color: black;
   font-size: 12px;
   text-align: center;
+  text
 }
 
 .flip-box-back {
   background-color: darkblue;
   color: white;
   font-size: 12px;
+  text-align: center;
+  transform: rotateY(180deg);
+}
+
+.flip-box-front-genre {
+  background-color: lightblue;
+  color: black;
+  font-size: 12px;
+  vertical-align: middle;
+  text-align: center;
+  text
+}
+
+.flip-box-back-genre {
+  background-color: darkblue;
+  color: white;
+  font-size: 12px;
+  vertical-align: middle;
   text-align: center;
   transform: rotateY(180deg);
 }
@@ -266,10 +285,10 @@ layout: default
           <center>
           <div class="flip-box-text">
             <div class="flip-box-inner">
-              <div class="flip-box-front">
+              <div class="flip-box-front-genre">
                 <h4>Number of genres</h4>
               </div>
-              <div class="flip-box-back">
+              <div class="flip-box-back-genre">
                 <h4>364</h4>
               </div>
             </div>
