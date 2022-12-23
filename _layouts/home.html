@@ -66,13 +66,15 @@ layout: default
 }
 
 .flip-box-front {
-  background-color: #bbb;
+  background-color: lightblue;
   color: black;
+  font-size: 18px;
 }
 
 .flip-box-back {
-  background-color: dodgerblue;
+  background-color: darkblue;
   color: white;
+  font-size: 18px;
   transform: rotateY(180deg);
 }
 
@@ -89,6 +91,7 @@ layout: default
     top: 50px;
     left: 0px;
     right: 0px;
+    margin-top: 4px;
     /* margin: 0 0 10 10 */
   }
 
@@ -536,13 +539,6 @@ layout: default
           <div class="col-md-12">
             <hr size="8" width="90%" color="red">
           </div>
-        </div>
-
-        
-
-        <!-- Pager -->
-        <div class="clearfix">
-          <a class="btn btn-primary float-right" href="{{'/posts' | relative_url }}">View All Posts &rarr;</a>
         </div>
 
   </div>
