@@ -65,7 +65,7 @@ def set_layout(fig):
         plot_bgcolor='rgba(0,0,0,0)',
         coloraxis_showscale=False,
         showlegend=False,
-        height=800, width=1100, 
+        height=1000, width=1400, 
         scene_camera_eye=dict(x=0.7, y=0.7, z=0.7), 
     )
     fig = fig.update_traces(hovertemplate=HOVER_TEMPLATE)
@@ -197,7 +197,7 @@ def create_rel_cloud(df, save=False):
     rel_fig.update_layout(
         updatemenus=[
             dict(
-                type="buttons", direction="left", x=0.35, y=1.12, font=dict(color="black"),
+                type="buttons", direction="left", x=0.5, y=1.12, font=dict(color="black"),
                 bgcolor="grey", xanchor = 'left', yanchor = 'top', 
                 pad={"r": 10, "t": 10}, #showactive=True,
                 buttons=list([
